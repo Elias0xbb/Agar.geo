@@ -27,13 +27,13 @@ Player structure:	1B Player ID, 2B x-coord, 2B y-coord, 2B radius
 Blob structure:		2B Blob ID, 2B x-coord, 2B y-coord
 Blob eaten structure: 2B Blob ID
 
-Full world snapshot: 2B Players length, <Players length>B player structures, 2B Blobs length, <Blobs length>B blob structures
-Update snapshot:	2B Players length, <Players length>B player structures, 2B Blobs created length, <Blobs created length>B blob structures, 2B Blobs eaten length, <Blobs eaten length>B blobs eaten structures
+Full world snapshot: 2B Players length, \<Players length\>B player structures, 2B Blobs length, \<Blobs length\>B blob structures
+Update snapshot:	2B Players length, \<Players length\>B player structures, 2B Blobs created length, \<Blobs created length\>B blob structures, 2B Blobs eaten length, \<Blobs eaten length\>B blobs eaten structures
 
 ### Client commands
 Command structure: 1B Command Type, nB opaque data structure 
 Player movement structure (1): 1B Player ID, 2B dx, 2B dy
 
-Command message: 2B Commands length, <Commands length>B command structures
+Command message: 2B Commands length, \<Commands length\>B command structures
 
 ### Event message
